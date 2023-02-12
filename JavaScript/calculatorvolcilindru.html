@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator volumul cilindrului</title>
+  <style>
+    .numarRaza {
+      text-align: center;
+      padding-right: 70px;
+
+    }
+
+    .numarInaltime {
+      text-align: center;
+      padding-right: 100px;
+    }
+
+    .butonsuma {
+      text-align: center;
+      padding-left: 46px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="numarRaza">
+    <label for="raza"> Raza cilindrului :</label>
+    <input type="number" id="raza">
+  </div>
+  <br>
+  <br>
+  <div class="numarInaltime">
+    <label for="inaltime"> Inaltimea cilindrului :</label>
+    <input type="number" id="inaltime">
+  </div>
+  <br>
+  <br>
+  <div class="butonsuma">
+    <button onclick="calcVolumCil()">
+      Calculare volum cilindru
+    </button>
+  </div>
+  </div>
+
+  <script>
+
+    function calcVolumCil() {
+      var raza = document.getElementById("raza").value;
+      var inaltime = document.getElementById("inaltime").value;
+      var constantaPi = 3.14;
+      var calcVol = constantaPi * raza * raza * inaltime;
+      document.write("Suma volumului cilindrului:  " + calcVol);
+    }
+
+
+  </script>
+</body>
+
+</html>
